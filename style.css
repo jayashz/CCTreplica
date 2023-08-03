@@ -69,6 +69,7 @@
   }
   .nav-drop{
     position: relative;
+    padding: 10px;
   }
   .dropdown-links{
     background-color:white;
@@ -84,7 +85,7 @@
   }
 .nav-drop:hover .dropdown-links{
   display: block;
-  top: 10px;
+
 
   }
 
@@ -224,8 +225,14 @@
 
 
 }
-.course:hover h4 ,.btn-3{
+.course:hover h4{
    color: var(--clr--primary-red);
+   
+}
+.course:hover{
+  box-shadow: 17px 18px 30px -7px rgba(108,108,108,0.85);
+-webkit-box-shadow: 17px 18px 30px -7px rgba(108,108,108,0.85);
+-moz-box-shadow: 17px 18px 30px -7px rgba(108,108,108,0.85);
 }
 .courses-section h1{
   padding-bottom: 51px;
@@ -237,13 +244,13 @@
   font-size: 14px;
   font-family: var(--ff--primary);
   border: none;
-  background-color: white;
+  background-color: transparent;
   transition: letter-spacing .3s ease-in-out;
-
+  max-width: 162px;
 }
 .btn-3:hover{
-  letter-spacing: 3px;
-
+  letter-spacing: 2.5px;
+  color: var(--clr--primary-red);
 }
 .btn-3 span{
   position: relative;
@@ -252,4 +259,118 @@
 }
 
 
+/**Notices section**/
+
+.notices-section{
+  background-color: #f9f5f1;
+  padding: 100px 60px;
+  display: flex;
+}
+.recent-notice h6{
+  color: var(--clr--primary-red);
+  font-size: 15px;
+  font-family: var(--ff--primary);
+}
+.recent-notice h4{
+  font-size: 45px;
+  font-family: var(--ff--secondary);
+  margin-bottom: 50px;
+}
+.notice-section-row{
+  display: flex;
   
+}
+.date{
+  background-color: #024f87;
+  color: white;
+  font-family: var(--ff--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  padding: 30px;
+  margin-right: 38px;
+  height: 116px;
+}
+
+.date:hover{
+  background-color: var(--clr--primary-red);
+}
+.notice-description h2{
+  font-size: 24px;
+  font-family: var(--ff--secondary);
+  margin-bottom: 15px;
+}
+.notice-description p{
+  color: var(--clr--gray-shade);
+  font-family: var(--ff--primary);
+  font-size: 15px;
+  margin-bottom: 18px;
+  line-height: 27px;
+}
+.notice-description:hover h2{
+  color: var(--clr--primary-red);
+}
+
+.notice-description .btn-3{
+  color: black;
+  background-color: #f9f5f1;
+  margin-left: -1px;
+} 
+.btn-3:hover{
+  color: var(--clr--primary-red);
+}
+.event-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.event-container h1{
+  font-size: 45px;
+  font-family: var(--ff--secondary);
+}
+.event-container h6{
+  font-size: 15px;
+  font-family: var(--ff--primary);
+  color: var(--clr--primary-red);
+}
+
+
+/**Admission procedure section**/
+.admission-section{
+  display: flex;
+  padding: 100px 60px;
+  align-items: center;
+}
+
+.col-2{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr--primary-red);
+  height: 451px;
+  padding: 50px;
+  color: white;
+  font-family: var(--ff--primary);
+
+}
+.col-2 h6{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.col-2 h3{
+  font-family: var(--ff--secondary);
+  margin-bottom: 20px;
+  font-size: 40px;
+
+}
+.col-2 p{
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+.col-2 .btn-3{
+  margin-left: -10px;
+  color: white;
+}
