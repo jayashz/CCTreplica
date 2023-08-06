@@ -8,6 +8,7 @@
   --clr--primary-red:#ad070e;
   --clr--gray-shade: #6b6b6b;
   --clr--notWHite: #fafafa;
+  --clr--blue: #024f87;
 }
 
 *{
@@ -373,4 +374,69 @@
 .col-2 .btn-3{
   margin-left: -10px;
   color: white;
+}
+
+
+
+/**Our services section**/
+
+.Our-services-section{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 50px 60px;
+margin-bottom: 70px;
+}
+.Our-services-section h2{
+  font-size: 45px;
+  font-family: var(--ff--secondary);
+  margin-bottom: 50px;
+}
+.services-container{
+  display: flex;
+  
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 24px;
+  padding: 31px;
+  border: 1px solid rgba(108,108,108,0.85);
+  transition: all 0.3s ease-in-out;
+  
+  margin-bottom: 30px;
+}
+.service:hover{
+  transform: translate(0,-4px);
+}
+.icon{
+  background-color: var(--clr--blue);
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon i{
+  font-size: 50px;
+  color: white;
+  }
+.service-description{
+  text-align: start;
+}
+.service h4{
+  font-size: 25px;
+  line-height: 30px;
+  margin: 15px 0;
+  font-family: var(--ff--secondary);
+}
+.service p{
+  font-size: 15px;
+  line-height: 27px;
+  color: var(--clr--gray-shade);
+  font-family: var(--ff--primary);
+
 }
